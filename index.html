@@ -3,25 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Capstone Project - DKUT</title>
+    <title>Capstone Project | Cheryl Achieng</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 1rem 0; text-align: center; }
-        nav ul { list-style: none; padding: 0; }
-        nav ul li { display: inline; margin: 0 15px; }
-        nav ul li a { color: #fff; text-decoration: none; }
-        section { padding: 20px; border-bottom: 1px solid #ccc; max-width: 800px; margin: auto; }
-        h2 { color: #2c3e50; }
-        .download-btn { background: #28a745; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; margin: 5px; }
-        .abstract-box { background: #f4f4f4; padding: 15px; margin-top: 10px; border-left: 5px solid #333; }
-        .social-links a { margin-right: 15px; font-weight: bold; }
+        /* --- GLOBAL STYLES --- */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #fcf5f8; /* Very light pink background */
+            color: #333;
+        }
+
+        /* --- HEADER & NAVIGATION --- */
+        header { 
+            background: linear-gradient(135deg, #4a148c 0%, #880e4f 100%); /* Purple to Red Gradient */
+            color: #fff; 
+            padding: 2rem 0; 
+            text-align: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5rem; 
+            letter-spacing: 1px; 
+            color: #ffffff; /* FORCE WHITE */
+        }
+        
+        /* THIS WAS THE FIX: Force header subtitles to be white */
+        header h3 { 
+            margin: 5px 0; 
+            font-weight: 300; 
+            opacity: 1; 
+            color: #ffffff !important; 
+        }
+
+        nav ul { list-style: none; padding: 0; margin-top: 20px; }
+        nav ul li { display: inline; margin: 0 10px; }
+        
+        nav ul li a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        nav ul li a:hover { 
+            background: rgba(255, 255, 255, 0.2); 
+            border: 1px solid #fff;
+        }
+
+        /* --- SECTIONS --- */
+        section { 
+            padding: 40px; 
+            background: white;
+            border: 1px solid #e1bee7; /* Light purple border */
+            border-radius: 8px;
+            max-width: 800px; 
+            margin: 20px auto; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 { 
+            color: #4a148c; /* Deep Purple for main section titles */
+            border-bottom: 2px solid #ff4081; /* Pink underline */
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Sub-headings in the body are Dark Red */
+        h3 { color: #880e4f; }
+        h4 { color: #c2185b; }
+
+        /* --- BUTTONS (Pink & Red Theme) --- */
+        .download-btn { 
+            background: #d81b60; /* Vibrant Pink/Red */
+            color: white; 
+            padding: 12px 20px; 
+            text-decoration: none; 
+            border-radius: 30px; 
+            display: inline-block; 
+            margin: 5px 5px 5px 0;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #d81b60;
+        }
+
+        .download-btn:hover { 
+            background: #fff; 
+            color: #d81b60; 
+            cursor: pointer;
+        }
+
+        /* --- ABSTRACT BOX --- */
+        .abstract-box { 
+            background: #fff0f5; /* Lavender/Pink tint */
+            padding: 20px; 
+            margin-top: 15px; 
+            border-left: 5px solid #8e24aa; /* Purple accent bar */
+            border-radius: 4px;
+        }
+
+        /* --- SOCIAL LINKS --- */
+        .social-links { margin-top: 10px; }
+        .social-links a { 
+            color: #4a148c; 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .social-links a:hover { color: #ff4081; }
+
+        /* --- IMAGES & IFRAMES --- */
+        iframe, img {
+            border: 2px solid #f8bbd0; 
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2e003e; /* Very dark purple */
+            color: #ffc1e3; /* Light pink text */
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Capstone Project Portfolio</h1>
-    <h3>Cheryl Achieng </h3>
+    <h3>Cheryl Achieng</h3>
     <h3>C027-01-2630/2021</h3>
     <nav>
         <ul>
@@ -32,34 +152,38 @@
         </ul>
     </nav>
 </header>
-<!--
-<section id="socials" style="text-align:center;">
-    <h3>Connect With Me</h3>
+
+<!--<section id="socials" style="text-align:center; border: 2px solid #ff4081;">
+    <h3 style="margin-top:0;">Connect With Me (Item 10)</h3>
+    <p><em>Evidence of professional online presence.</em></p>
     <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Blog/Vlog</a>
+        <a href="#" target="_blank">LinkedIn</a> |
+        <a href="#" target="_blank">Twitter/X</a> |
+        <a href="#" target="_blank">Instagram</a> |
+        <a href="#" target="_blank">Facebook</a> |
+        <a href="#" target="_blank">Blog/Vlog</a>
     </div>
-</section>
--->
+</section>-->
 
 <section id="about">
     <h2>1. Personal Profile</h2>
     
-    <h3>Resumes (Item 1)</h3>
+    <h3>Resumes</h3>
     <p>Download my professional resume in three languages:</p>
     <a href="Resume english-Cheryl Achieng.pdf" class="download-btn">English CV</a>
     <a href="Resume kiswahili-Cheryl achieng.pdf" class="download-btn">Kiswahili CV</a>
     <a href="Resume luo -Cheryl Achieng.pdf" class="download-btn">Indigenous Language CV</a>
 
     <h3>Autobiography (Item 2 & 3)</h3>
+    
     <p><strong>My Journey:</strong> A comprehensive 20-30 page reflection on my life and career path.</p>
     <a href="Autobiography-che.pdf" class="download-btn">Read Full Essay</a>
     
-    <h4>Presentation Summary:</h4>
-    <iframe src="" width="100%" height="400px"></iframe>
+    <h4>Presentation Summary </h4>
+<p style="margin-top: 10px;">
+    <a href="Autobiography.pptx" class="download-btn">Download PowerPoint (.pptx)</a>
+</p>
+
 </section>
 
 <section id="innovation">
@@ -70,9 +194,9 @@
     
     <div class="abstract-box">
         <h4>Abstracts</h4>
-        <p><strong>English:</strong></p>
-        <p><strong>Kiswahili:</strong></p>
-        <p><strong>Indigenous:</strong></p>
+        <p><strong>English:</strong> incomplete</p>
+        <p><strong>Kiswahili:</strong> </p>
+        <p><strong>Indigenous:</strong> </p>
     </div>
 
     <h3>Slides Presentation (Item 5)</h3>
@@ -87,9 +211,9 @@
     
     <div class="abstract-box">
         <h4>Abstracts</h4>
-        <p><strong>English:</strong></p>
-        <p><strong>Kiswahili:</strong></p>
-        <p><strong>Indigenous:</strong></p>
+        <p><strong>English:</strong>incomplete</p>
+        <p><strong>Kiswahili:</strong> </p>
+        <p><strong>Indigenous:</strong> </p>
     </div>
 
     <h3>Cultural Presentation (Item 7)</h3>
@@ -104,19 +228,19 @@
     
     <div class="abstract-box">
         <h4>Abstracts</h4>
-        <p><strong>English:</strong></p>
-        <p><strong>Kiswahili:</strong></p>
-        <p><strong>Indigenous:</strong></p>
+        <p><strong>English:</strong> incomplete</p>
+        <p><strong>Kiswahili:</strong> </p>
+        <p><strong>Indigenous:</strong> </p>
     </div>
 
     <h3>Photographic Essay (Item 9)</h3>
-    <p>A visual journey.</p>
+    <p>A visual journey through the community.</p>
     <img src="photo1.jpg" width="100%" alt="Description">
     <img src="photo2.jpg" width="100%" alt="Description">
-    </section>
+</section>
 
-<footer style="text-align:center; padding: 20px; background:#333; color:#fff;">
-    <p>&copy;DKUT Capstone Project</p>
+<footer>
+    <p>&copy; 2024 Cheryl Achieng | DKUT Capstone Project</p>
 </footer>
 
 </body>
