@@ -3,243 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Project | Cheryl Achieng</title>
-    <style>
-        /* --- GLOBAL STYLES --- */
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.6; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #fcf5f8; /* Very light pink background */
-            color: #333;
-        }
-
-        /* --- HEADER & NAVIGATION --- */
-        header { 
-            background: linear-gradient(135deg, #4a148c 0%, #880e4f 100%); /* Purple to Red Gradient */
-            color: #fff; 
-            padding: 2rem 0; 
-            text-align: center; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        header h1 { 
-            margin: 0; 
-            font-size: 2.5rem; 
-            letter-spacing: 1px; 
-            color: #ffffff; /* FORCE WHITE */
-        }
-        
-        /* THIS WAS THE FIX: Force header subtitles to be white */
-        header h3 { 
-            margin: 5px 0; 
-            font-weight: 300; 
-            opacity: 1; 
-            color: #ffffff !important; 
-        }
-
-        nav ul { list-style: none; padding: 0; margin-top: 20px; }
-        nav ul li { display: inline; margin: 0 10px; }
-        
-        nav ul li a { 
-            color: #fff; 
-            text-decoration: none; 
-            font-weight: bold; 
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 1px solid transparent;
-            transition: all 0.3s;
-        }
-        
-        nav ul li a:hover { 
-            background: rgba(255, 255, 255, 0.2); 
-            border: 1px solid #fff;
-        }
-
-        /* --- SECTIONS --- */
-        section { 
-            padding: 40px; 
-            background: white;
-            border: 1px solid #e1bee7; /* Light purple border */
-            border-radius: 8px;
-            max-width: 800px; 
-            margin: 20px auto; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        h2 { 
-            color: #4a148c; /* Deep Purple for main section titles */
-            border-bottom: 2px solid #ff4081; /* Pink underline */
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-
-        /* Sub-headings in the body are Dark Red */
-        h3 { color: #880e4f; }
-        h4 { color: #c2185b; }
-
-        /* --- BUTTONS (Pink & Red Theme) --- */
-        .download-btn { 
-            background: #d81b60; /* Vibrant Pink/Red */
-            color: white; 
-            padding: 12px 20px; 
-            text-decoration: none; 
-            border-radius: 30px; 
-            display: inline-block; 
-            margin: 5px 5px 5px 0;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: 2px solid #d81b60;
-        }
-
-        .download-btn:hover { 
-            background: #fff; 
-            color: #d81b60; 
-            cursor: pointer;
-        }
-
-        /* --- ABSTRACT BOX --- */
-        .abstract-box { 
-            background: #fff0f5; /* Lavender/Pink tint */
-            padding: 20px; 
-            margin-top: 15px; 
-            border-left: 5px solid #8e24aa; /* Purple accent bar */
-            border-radius: 4px;
-        }
-
-        /* --- SOCIAL LINKS --- */
-        .social-links { margin-top: 10px; }
-        .social-links a { 
-            color: #4a148c; 
-            margin: 0 10px; 
-            text-decoration: none; 
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        .social-links a:hover { color: #ff4081; }
-
-        /* --- IMAGES & IFRAMES --- */
-        iframe, img {
-            border: 2px solid #f8bbd0; 
-            border-radius: 5px;
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        /* --- FOOTER --- */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2e003e; /* Very dark purple */
-            color: #ffc1e3; /* Light pink text */
-            margin-top: 40px;
-        }
-    </style>
+    <title>Capstone Portfolio | Cheryl Achieng</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Capstone Project Portfolio</h1>
-    <h3>Cheryl Achieng</h3>
-    <h3>C027-01-2630/2021</h3>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#innovation">Innovation</a></li>
-            <li><a href="#culture">Culture</a></li>
-            <li><a href="#society">Society</a></li>
-        </ul>
-    </nav>
-</header>
+    <aside class="sidebar">
+        <div class="brand">Capstone Project</div>
+        <nav>
+            <ul class="checklist-nav">
+                <li><a href="#item-1">01. Resumes (EN/SW/IND)</a></li>
+                <li><a href="#item-2">02-03. Autobiography & PPT</a></li>
+                <li class="video-req"><a href="#item-4">04-05. VIDEO 1: Innovation</a></li>
+                <li class="video-req"><a href="#item-6">06-07. VIDEO 2: Culture & Gender</a></li>
+                <li class="video-req"><a href="#item-8">08. VIDEO 3: Social Challenges</a></li>
+                <li><a href="#item-9">09. Photographic Essay</a></li>
+                <li><a href="#item-10">10. Digital Evidence </a></li>
+            </ul>
+        </nav>
+    </aside>
 
-<!--<section id="socials" style="text-align:center; border: 2px solid #ff4081;">
-    <h3 style="margin-top:0;">Connect With Me (Item 10)</h3>
-    <p><em>Evidence of professional online presence.</em></p>
-    <div class="social-links">
-        <a href="#" target="_blank">LinkedIn</a> |
-        <a href="#" target="_blank">Twitter/X</a> |
-        <a href="#" target="_blank">Instagram</a> |
-        <a href="#" target="_blank">Facebook</a> |
-        <a href="#" target="_blank">Blog/Vlog</a>
-    </div>
-</section>-->
+    <main class="content-area">
+        <header class="main-header">
+            <h1>Cheryl Achieng </h1>
+            <p>B.Sc. Business Information Technology | DeKUT</p>
+         
+        </header>
 
-<section id="about">
-    <h2>1. Personal Profile.</h2>
-    
-    <h3>Resumes (item 1)</h3>
-    <h4>Download my professional resume in three languages:</h4>
-    <a href="Resume english-Cheryl Achieng.pdf" class="download-btn">English CV</a>
-    <a href="Resume kiswahili-Cheryl achieng.pdf" class="download-btn">Kiswahili CV</a>
-    <a href="Resume luo -Cheryl Achieng.pdf" class="download-btn">Indigenous Language CV</a>
+        <section class="grid-layout">
 
-    <h3>Autobiography (Item 2 & 3)</h3>
-    
-    <h4>My Journey :A comprehensive 20-30 page reflection on my life and career path.</h4>
-    <a href="Autobiography-che.pdf" class="download-btn">Read Full Essay</a>
-    
-    <h3>Presentation Summary </h3>
-<p style="margin-top: 10px;">
-    <a href="Autobiography.pptx" class="download-btn">Download PowerPoint (.pptx)</a>
-</p>
+            <div class="audit-card" id="item-1">
+                <div class="card-tag">Item 01</div>
+                <h3>Professional Resumes</h3>
+                <p>Up-to-date CV in English, Kiswahili, and an Indigenous African language.</p>
+                <div class="button-row">
+                    <a href="Docs/Resume english-Cheryl Achieng.pdf" class="btn" target="_blank">English</a>
+                    <a href="Docs/Resume kiswahili-Cheryl achieng.pdf" class="btn secondary" target="_blank">Kiswahili</a>
+                    <a href="Docs/Resume luo -Cheryl Achieng.pdf" class="btn secondary" target="_blank">Indigenous</a>
+                </div>
+            </div>
 
-</section>
+            <div class="audit-card" id="item-2">
+                <div class="card-tag">Item 02-03</div>
+                <h3>Autobiographical Essay & Presentation</h3>
+                <p>Comprehensive journey essay and accompanying PowerPoint.</p>
+                <div class="button-row">
+                    <a href="Docs/Autobiography-che (1).pdf" class="btn" target="_blank">Read Autobiography</a>
+                    <a href="Docs/autobiography.pptx" class="btn secondary">View PPT</a>
+                </div>
+            </div>
 
-<section id="innovation">
-    <h2>2. Innovation in My Field.</h2>
-    
-    <h3>Video Presentation (Item 4)</h3>
-    <h4>Innovation in mobile banking download abstract.</h4>
-    <a href="abstractinovation.pdf" class="download-btn">Abstract in english,swahili and indeenous Language</a>
+            <div class="audit-card featured" id="item-4">
+                <div class="card-tag"> Item 04-05</div>
+                <h3>Field Innovation </h3>
+                <p>Mobile Banking Innovation</p>
+                <div class="video-container">
+                    <video width="100%" controls preload="metadata">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="button-row">
+                    <a href="Docs/abstractinovationitem4.pdf" class="btn" target="_blank">Invention Abstract</a>
+                    <a href="Docs/item5.pptx" class="btn secondary">Innovation  PPT</a>
+                </div>
+            </div>
 
-    <h4>Download video</h4>
-    <a href= "" class="download-btn">video on innovation</a>
-    
-    <h3> Presentation (Item 5)</h3>
-    <a href="" class="download-btn">Download PowerPoint (.pptx)</a>
-    
-</section>
+            <div class="audit-card" id="item-6">
+                <div class="card-tag">Item 06-07</div>
+                <h3>African Culture & Gender Awareness</h3>
+                <p>African Music and its Impact.</p>
+                <div class="video-container">
+                    <video width="100%" controls preload="metadata">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="button-row">
+                    <a href="Docs/abstarct on african culture item 6.pdf" class="btn" target="_blank">African culture Abstract</a>
+                   
+                    <a href="Docs/item7.pptx" class="btn secondary">African Culture PPT</a>
+                </div>
+            </div>
 
-<section id="culture">
-    <h2>3. African Culture & Gender Awareness</h2>
-    
-    <h3>Cultural Video (Item 6)</h3>
-    <h4>Download abstract.</h4>
-    <a href="abtractonculture.pdf" class="download-btn">Abstract in english,swahili and indeenous Language</a>
+            <div class="audit-card" id="item-8">
+                <div class="card-tag">Requirement 08</div>
+                <h3>Modern Social Challenges</h3>
+                <p>The crisis of youth unemployment in kenya.</p>
+                <div class="video-container">
+                    <video width="100%" controls preload="metadata">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="button-row">
+                    <a href="Docs/absractitem8.pdf" class="btn" target="_blank">Morden social Challenges Abstract</a>
+                  
+                </div>
+            </div>
 
-    <h4>Download video</h4>
-    <a href= "" class="download-btn">Cultural video</a>
-    
-    <h3>Cultural Presentation (Item 7)</h3>
-    <a href="" class="download-btn">Download PowerPoint (.pptx)</a>
-   
-</section>
+            <div class="audit-card" id="item-9">
+                <div class="card-tag">Requirement 09</div>
+                <h3>Photographic Essay</h3>
+                <p>Stret Children in urban centers.</p>
+                <a href="Docs/item 9.pdf" class="btn" target="_blank">View Photo Essay</a>
+            </div>
 
-<section id="society">
-    <h2>4. Society & Challenges</h2>
-    
-    <h3>Modern Challenge Solution (Item 8)</h3>
-    <h4>Download abstract.</h4>
-    <a href="abractitem8.pdf" class="download-btn">Abstract in english,swahili and indeenous Language</a>
+            <div class="audit-card" id="item-10">
+                <div class="card-tag">Requirement 10</div>
+                <h3>Digital Evidence</h3>
+                <ul class="social-list">
+                    <li><a href="" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/cheryl-25" target="_blank">GitHub</a></li>
+                    <li><a href="" target="_blank">Whats app</a></li>
+                </ul>
+            </div>
 
-    <h4>Download video</h4>
-    <a href= "" class="download-btn">Modern Challenge Solution video</a>
-    
-    <h4>Modern Challenge Solution Presentation </h4>
-    <a href="" class="download-btn">Download PowerPoint (.pptx)</a>
-   
-   
-
-    <h3>Photographic Essay (Item 9)</h3>
-    <p>A visual journey through the community.</p>
-    <img src="photo1.jpg" width="100%" alt="Description">
-    
-</section>
-
-<footer>
-    <p>Cheryl Achieng | DeKUT Capstone Project</p>
-</footer>
+        </section>
+    </main>
 
 </body>
 </html>
